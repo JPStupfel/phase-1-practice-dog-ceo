@@ -58,11 +58,8 @@ function changeColor(element){
 
 function handleDropDown(){
     const dropDown = document.querySelector('#breed-dropdown')
-
-  
     
     function filter(letter){
-    
 
         const origUl = document.querySelector('#dog-breeds').children
         const ul = [...origUl]
@@ -71,7 +68,6 @@ function handleDropDown(){
                document.querySelector('#dog-breeds').removeChild(ul[i]) ; console.log(i)
         }
         }
-
        return origUl
     }
     
